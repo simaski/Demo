@@ -1,6 +1,29 @@
 <resources>
-    <string name="app_name">Demo</string>
+    <string name="app_name">SIGSEG</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="titulo_cenatel">Centro Nacional de Teledetección con Fines Agricolas</string>
+    <string name="correo_cenatel">cenatel.venezuela@gmail.com</string>
+    <string name="op_datos">Datos</string>
+    <string name="op_puntos">Puntos</string>
+    <string name="op_enviar_datos">Enviar Datos</string>
+    <!-- fragment datos-->
+    <string name="op_funcionario">Funcionario</string>
+    <string name="op_fechaCaptura">Fecha de Captura</string>
+    <string name="op_ubicacion">Ubicacion</string>
+    <string name="op_nombreFinca">Nombre de Finca</string>
+    <string name="op_tipoCultivo">Tipo de Cultivo</string>
+    <string name="op_fechaSiembra">Fecha de Siembra</string>
+    <string name="op_variedad">Variedad</string>
+    <string name="op_etapaFenologica">Etapa Fenologica</string>
+    <string name="op_condicion">Condicion</string>
+    <string name="op_numeroLote">Numero de Lote</string>
+    <string name="op_observacion">Observacion</string>
+    <string name="op_btCapturar">Capturar</string>
+    <string name="op_btEnviar">Enviar</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

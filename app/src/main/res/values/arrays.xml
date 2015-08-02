@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arr_estados">
+        <item>Amazonas</item>
+        <item>Anzoátegui</item>
+        <item>Apure</item>
+        <item>Aragua</item>
+        <item>Barinas</item>
+        <item>Bolivar</item>
+        <item>Carabobo</item>
+        <item>Cojedes</item>
+        <item>Delta Amacuro</item>
+        <item>Distrito Capital</item>
+        <item>Falcón</item>
+        <item>Guarico</item>
+        <item>Lara</item>
+        <item>Mérida</item>
+        <item>Miranda</item>
+        <item>Monagas</item>
+        <item>Nueva Esparta</item>
+        <item>Portuguesa</item>
+        <item>Sucre</item>
+        <item>Táchira</item>
+        <item>Trujillo</item>
+        <item>Vargas</item>
+        <item>Yaracuy</item>
+        <item>Zulia</item>
+    </string-array>
+
+    <string-array name="array_etapasArroz">
+        <item>Suelo Sembrado</item>
+        <item>Plantula</item>
+        <item>Macollamiento</item>
+        <item>Floracion</item>
+        <item>Llenado de Granos</item>
+    </string-array>
+
+    <string-array name="array_condicion">
+        <item>Sano</item>
+        <item>Enfermo</item>
+    </string-array>
+</resources>

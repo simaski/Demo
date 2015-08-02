@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/status_bar_height">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    android:elevation="4dp"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:theme="@style/ToolbarTheme" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_funcionario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/abc_action_bar_default_height_material"
+                android:text="@string/op_funcionario"
+                android:textColor="@color/md_text"
+                android:textSize="21sp" />
+
+            <EditText
+                android:id="@+id/et_funcionario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_funcionario"
+                android:ems="10"
+                android:hint="Escribe Nombre Funcionario" />
+
+            <TextView
+                android:id="@+id/tv_fechaCaptura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/et_funcionario"
+                android:layout_marginTop="10dp"
+                android:text="@string/op_fechaCaptura"
+                android:textColor="@color/md_text"
+                android:textSize="21sp" />
+
+            <EditText
+                android:id="@+id/et_fechaCaptura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_fechaCaptura"
+                android:editable="false" />
+
+            <TextView
+                android:id="@+id/tv_ubicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_fechaCaptura"
+                android:layout_marginTop="10dp"
+                android:text="@string/op_ubicacion"
+                android:textColor="@color/md_text"
+                android:textSize="21sp" />
+
+            <Spinner
+                android:id="@+id/spi_ubicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_ubicacion"
+                android:longClickable="true" />
+
+            <TextView
+                android:id="@+id/tv_nombreParticipante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spi_ubicacion"
+                android:layout_marginTop="10dp"
+                android:text="@string/op_nombreFinca"
+                android:textColor="@color/md_text"
+                android:textSize="21sp" />
+
+            <EditText
+                android:id="@+id/et_nombreParticipante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_nombreParticipante"
+                android:layout_below="@+id/tv_nombreParticipante"
+                android:ems="10"
+                android:hint="Ingrse Nombre Finca"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/tv_observacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/et_nombreParticipante"
+                android:layout_marginTop="10dp"
+                android:text="@string/op_observacion"
+                android:textColor="@color/md_text"
+                android:textSize="21sp" />
+
+            <EditText
+                android:id="@+id/et_observacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_observacion"
+                android:hint="Observacion"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/bt_enviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_observacion"
+                android:layout_centerInParent="true"
+                android:text="@string/op_btEnviar" />
+
+            <Button
+                android:id="@+id/bt_ver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_enviar"
+                android:layout_centerInParent="true"
+                android:text="Ver" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
