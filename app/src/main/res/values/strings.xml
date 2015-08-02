@@ -13,13 +13,7 @@
     <string name="op_funcionario">Funcionario</string>
     <string name="op_fechaCaptura">Fecha de Captura</string>
     <string name="op_ubicacion">Ubicacion</string>
-    <string name="op_nombreFinca">Nombre de Finca</string>
-    <string name="op_tipoCultivo">Tipo de Cultivo</string>
-    <string name="op_fechaSiembra">Fecha de Siembra</string>
-    <string name="op_variedad">Variedad</string>
-    <string name="op_etapaFenologica">Etapa Fenologica</string>
-    <string name="op_condicion">Condicion</string>
-    <string name="op_numeroLote">Numero de Lote</string>
+    <string name="op_nombreParticipante">Nombre del Participante</string>
     <string name="op_observacion">Observacion</string>
     <string name="op_btCapturar">Capturar</string>
     <string name="op_btEnviar">Enviar</string>
