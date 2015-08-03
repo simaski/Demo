@@ -46,7 +46,7 @@ public class VerRegistrosFragment extends Fragment {
 
 
                 //Toast.makeText(getActivity(), "PULSANDO SOBRE LIST VIEW"+registroPosicion, Toast.LENGTH_SHORT).show();
-               /* PuntosFragment fragment2 = new PuntosFragment();
+                VerDatosCompletosFragment fragment2 = new VerDatosCompletosFragment();
                 Bundle parametro = new Bundle();
                 parametro.putInt("Key",registroPosicion);
                 fragment2.setArguments(parametro);

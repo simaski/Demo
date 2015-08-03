@@ -133,13 +133,6 @@
                 android:layout_centerInParent="true"
                 android:text="@string/op_btEnviar" />
 
-            <Button
-                android:id="@+id/bt_ver"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/bt_enviar"
-                android:layout_centerInParent="true"
-                android:text="Ver" />
         </RelativeLayout>
     </ScrollView>
 </LinearLayout>

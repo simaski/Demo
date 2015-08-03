@@ -128,12 +128,7 @@ public class DatosFragment extends Fragment {
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
-
-
-
-
-
-        //-------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
 
         //--------------------CARPETA IMAGENES--------------------------------------------------------------
         File f = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/CenatelSSCP/");
@@ -141,8 +136,6 @@ public class DatosFragment extends Fragment {
             f.mkdir();
         }
         //--------------------------------------------------------------------------------------------------
-
-        //------------------------------ESCRITURA DE IMAGENES-------------------------------------------------
 
         btEnviar = (Button) v.findViewById(R.id.bt_enviar);
         btEnviar.setOnClickListener(new View.OnClickListener() {
@@ -168,10 +161,6 @@ public class DatosFragment extends Fragment {
                     et_nombreParticpanteR = et_nombreParticipante.getText().toString();
                     et_observacionR = et_observacion.getText().toString();
 
-
-
-
-
                     sqlite = new SQLite(getActivity());
                     sqlite.abrir();
                     sqlite.addRegistro(et_nombreParticpanteR, et_fechaCapturaR, et_ubicacionR, et_funcionarioR, et_observacionR);
@@ -182,21 +171,10 @@ public class DatosFragment extends Fragment {
                     et_nombreParticipante.setText("");
                     et_observacion.setText("");
 
-
-
-
                 }
             }
         });
 
-        btnVerDatos = (Button) v.findViewById(R.id.bt_ver);
-        btnVerDatos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-               // Toast.makeText(getActivity(), "No!"+prueba, Toast.LENGTH_SHORT).show();
-            }
-        });
         return v;
     }
 
@@ -205,7 +183,7 @@ public class DatosFragment extends Fragment {
         // Setting Dialog Title
         alertDialog.setTitle("Alerta!!!");
         // Setting Dialog Message
-        alertDialog.setMessage("Uno o varios campos obligatorios no han sido llenados. O no ha capturado las Fotografias");
+        alertDialog.setMessage("Uno o varios campos obligatorios no han sido llenados.");
         // Setting Icon to Dialog
         //alertDialog.setIcon(R.drawable.delete);
         // On pressing Settings button
@@ -217,44 +195,5 @@ public class DatosFragment extends Fragment {
         // Showing Alert Message
         alertDialog.show();
     }
-
-
-
-
-    /*public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK || keyCode == KeyEvent.KEYCODE_HOME) {
-            backButton = true;
-            //Toast tosat2 = Toast.makeText(getApplicationContext(),"Funciona!!!!", Toast.LENGTH_SHORT ); tosat2.show();
-            AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
-            // Setting Dialog Title
-            alertDialog.setTitle("Salir de la Aplicación");
-            // Setting Dialog Message
-            alertDialog.setMessage("¿Quieres salir de la aplicación?");
-            // Setting Icon to Dialog
-            // alertDialog.setIcon(R.drawable.delete);
-            // On pressing Settings button
-            alertDialog.setPositiveButton("No",
-                    new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.cancel();
-                        }
-                    });
-            // on pressing cancel button
-            alertDialog.setNegativeButton("Si",
-                    new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            //moveTaskToBack(true);
-                            //locationManager.removeUpdates(locListener);
-                            //hand.removeCallbacks(actualizar);
-                            getActivity().finish();
-                            //onStop();
-                        }
-                    });
-            // Showing Alert Message
-            alertDialog.show();
-        }
-        return true;
-    }*/
-
 
 }
